@@ -18,7 +18,7 @@ def build(bld):
     bld(
         features='cxx',
         source=['gtest/src/gtest-all.cc'],
-        tartget='gtest',
+        target='gtest',
         includes=['gtest/include', 'gtest'],
         export_includes=['gtest/include']
     )
