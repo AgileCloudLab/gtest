@@ -22,3 +22,10 @@ def build(bld):
         includes=['gtest/include', 'gtest'],
         export_includes=['gtest/include']
     )
+    bld(
+        features='cxx',
+        source=['gtest/src/gtest_main.cc'],
+        target='gtest_main',
+        includes=['gtest/include', 'gtest']
+    )
+
